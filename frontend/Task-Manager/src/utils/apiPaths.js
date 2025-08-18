@@ -1,4 +1,6 @@
-export const API_BASE_URL = 'http://localhost:4000';
+export const API_BASE_URL = window.location.hostname === "localhost"
+    ? "http://localhost:4000"
+    : "https://task-manager-dp7p.onrender.com";;
 
 //utils/apiPaths.js
 export const API_Paths = {
