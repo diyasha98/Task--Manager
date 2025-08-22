@@ -449,7 +449,7 @@ React.useEffect(() => {
 
       <Modal 
         isOpen= {openDeleteAlert} 
-        onclose= {() => setOpenDeleteAlert(false)}
+        onClose= {() => setOpenDeleteAlert(false)}
         title= "Delete Task"
         >
           <DeleteAlert 
