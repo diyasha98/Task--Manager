@@ -239,6 +239,10 @@ React.useEffect(() => {
       setError("Project Name is required.");
       return;
     }
+    if(!taskData.domain.trim()) {
+      setError("Domain Name is required.");
+      return;
+    }
     if(!taskData.dueDate) {
       setError("Due Date is required.");
       return;
